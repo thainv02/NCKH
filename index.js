@@ -1,12 +1,10 @@
-var listCoursesBlock = document.querySelector('#list-topic')
+var listCoursesBlock = document.querySelector('#list-course')
 
 var courseAPI = ''
 
 
 function start(){
-    getCourses(function(course) {
-        renderCourses (course);
-    });
+    getCourses(renderCourses);
 }
 
 start(); 
@@ -18,6 +16,16 @@ function getCourses(callback){
         })
         .then(callback);
 }
-function renderCourses(){
-    
+function renderCourses(courses){
+    var listCoursesBlock = document.querySelector('#list-course')
+    var htmls = courses.map(function(course) {
+        return
+            <li>
+                <h5>${course.name}</h5>
+                <p>${course.description}</p>
+            </li>
+        ;
+    });
+    listCoursesBlock.innerHTML = htmls.join('');
+
 }

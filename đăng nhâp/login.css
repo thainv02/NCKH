@@ -14,12 +14,13 @@
 body{
     height: 100vh;
     background-image: url(/assets/img/truongdaihocmodiachat.jpg);
-   
+    background-repeat: no-repeat;
     overflow:hidden;
     font-family: 'Poppins';
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .container{

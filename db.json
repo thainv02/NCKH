@@ -1,0 +1,14 @@
+{
+    "courses":[
+        {
+            "id":1,
+            "name":"tên đề tài",
+            "description": "chi tiết"
+        },
+        {
+            "id":2,
+            "name":"tên đề tài 2",
+            "description": "chi tiết 2"
+        }
+    ]
+}

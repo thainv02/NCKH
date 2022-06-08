@@ -247,12 +247,10 @@
 .body_conten{
   font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin: 20px;
 }
 .link_body{
-  padding-top: 20px;
-  margin-left: 30px;
+ 
   text-decoration: none;
   list-style-type: none;
 }
@@ -260,6 +258,7 @@
   color: #000;
 }
 .copyright{
+  left: 7.5%;
   width: 1170px;
   background-color: rgb(13,47,126);
   position: absolute;
@@ -268,4 +267,10 @@
   color: white;
   padding: 7px 0;
   border-radius: 5px;
+}
+.list__student{
+  border: none;
+}
+.input__QLDT{
+  padding-top: 200px;
 }
